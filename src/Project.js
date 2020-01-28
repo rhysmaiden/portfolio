@@ -10,8 +10,12 @@ function Project(props) {
         <p>{props.description}</p>
         <h4>Front-end: {props.frontEnd}</h4>
         <p>{props.frontEndDescription}</p>
-        <h4>Back-end: {props.backEnd}</h4>
-        <p>{props.backEndDescription}</p>
+        {props.backEnd && (
+          <React.Fragment>
+            <h4>Back-end: {props.backEnd}</h4>
+            <p>{props.backEndDescription}</p>
+          </React.Fragment>
+        )}
       </div>
 
       <div className="preview">
@@ -20,29 +24,42 @@ function Project(props) {
       <div className="buttons">
         {props.frontEndSrc && (
           <button
-            onclick={() => {
-              window.location.href = props.frontEndSrc;
+            class="btn"
+            onClick={() => {
+              window.open(props.frontEndSrc);
             }}
           >
-            <i className="fas fa-code fa-large icon"></i>
-            <p> Front End Source</p>
+            <i class="fa fa-code"></i> Front-End Source
           </button>
         )}
+
         {props.backEndSrc && (
-          <button src={props.backEndSrc}>
-            <i className="fas fa-code fa-large icon"></i>
-            <p> Back End Source</p>
+          <button
+            class="btn"
+            onClick={() => {
+              window.open(props.backEndSrc);
+            }}
+          >
+            <i class="fa fa-code"></i> Back-End Source
           </button>
         )}
         {props.src && (
-          <button>
-            <i className="fas fa-code fa-large icon"></i>
-            <p>Source</p>
+          <button
+            class="btn"
+            onClick={() => {
+              window.open(props.src);
+            }}
+          >
+            <i class="fa fa-code"></i> Source
           </button>
         )}
-        <button>
-          <i className="fas fa-desktop icon"></i>
-          <p>Demo</p>
+        <button
+          class="btn"
+          onClick={() => {
+            window.open(props.demo);
+          }}
+        >
+          <i class="fa fa-desktop"></i> Demo
         </button>
       </div>
     </div>

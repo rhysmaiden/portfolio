@@ -20,9 +20,9 @@ function App() {
           title="The Rugby Vault"
           description="A website that displays and allows users to watch match and try highlights."
           frontEnd="ReactJS"
-          frontEndDescription="Data is passed from Django views to the template through url parameters"
+          frontEndDescription="The frontend fetches data from the server."
           backEnd="Django REST Framework"
-          backEndDescription="The backend acts as an API which the front end calls to recieve the correct highlights. There are a number of python scripts that run periodically to get new fixtures and youtube highlights."
+          backEndDescription="The backend accepts GET and POST requests from the client. Periocially run python scripts keep the database updated."
           gif={rugbyGif}
           frontEndSrc="https://github.com/rhysmaiden/rugbyvaultfrontend"
           backEndSrc="https://github.com/rhysmaiden/rugbyvaultbackend"
@@ -34,7 +34,7 @@ function App() {
           frontEnd="React Native"
           frontEndDescription="The front-end is built using react-native in combination with Expo. It uses Socket IO to communicate with the server."
           backEnd="Node JS and MongoDB"
-          backEndDescription="The Node JS server uses Socket IO to communicate with clients. A MongoDB collection stores all the room and player information."
+          backEndDescription="The Node JS server uses Socket IO to communicate with clients. MongoDB holds all the room and player information."
           gif={noCashGif}
           src="https://github.com/rhysmaiden/NoCash"
         />
@@ -44,22 +44,22 @@ function App() {
           frontEnd="ReactJS"
           frontEndDescription="Data is fetched through Instagram GraphQL Queries and displayed in a responsive grid."
           gif={InstaLiveGif}
+          src="https://github.com/rhysmaiden/instalive"
         />
 
         <Project
           title="The Custom Herald"
           description="A single page application which enables users to search and filter news"
-          frontEnd="Jinja Templates"
+          frontEnd="ReactJS"
           frontEndDescription="Data is passed from Django views to the template through url parameters"
-          backEnd="Django"
-          backEndDescription="SQLite database is updated through automated python web crawlers"
           gif={rugbyGif}
+          src="https://github.com/rhysmaiden/customherald"
         />
 
         <Project
           title="Song of the Season"
           description="A single page application that shows your most listened to tracks, artists and albums."
-          frontEnd="Jinja Templates"
+          frontEnd="ReactJS"
           frontEndDescription="Data is fetched through Last FM"
           gif={rugbyGif}
         />
