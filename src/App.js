@@ -45,6 +45,7 @@ function App() {
           frontEndDescription="Data is fetched through Instagram GraphQL Queries and displayed in a responsive grid."
           gif={InstaLiveGif}
           src="https://github.com/rhysmaiden/instalive"
+          demo="https://instalive.netlify.com/"
         />
 
         <Project
@@ -60,7 +61,7 @@ function App() {
           title="Song of the Season"
           description="A single page application that shows your most listened to tracks, artists and albums."
           frontEnd="ReactJS"
-          frontEndDescription="Data is fetched through Last FM"
+          frontEndDescription="Data is fetched through Last FM. To test use username: sabermusicmag"
           gif={rugbyGif}
         />
       </div>
