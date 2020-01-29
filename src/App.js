@@ -15,6 +15,7 @@ function App() {
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
       />
       <Hero />
+      <h1>Projects</h1>
       <div className="projects">
         <Project
           title="The Rugby Vault"
@@ -22,7 +23,7 @@ function App() {
           frontEnd="ReactJS"
           frontEndDescription="The frontend fetches data from the server."
           backEnd="Django REST Framework"
-          backEndDescription="The backend accepts GET and POST requests from the client. Periocially run python scripts keep the database updated."
+          backEndDescription="The backend accepts GET and POST requests from the client. Periodically run python scripts keep the database updated."
           gif={rugbyGif}
           frontEndSrc="https://github.com/rhysmaiden/rugbyvaultfrontend"
           backEndSrc="https://github.com/rhysmaiden/rugbyvaultbackend"
