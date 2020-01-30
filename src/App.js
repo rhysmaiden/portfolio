@@ -49,14 +49,14 @@ function App() {
           demo="https://instalive.netlify.com/"
         />
 
-        <Project
+        {/* <Project
           title="The Custom Herald"
           description="A single page application which enables users to search and filter news"
           frontEnd="ReactJS"
           frontEndDescription="Data is passed from Django views to the template through url parameters"
           gif={rugbyGif}
           src="https://github.com/rhysmaiden/customherald"
-        />
+        /> */}
 
         <Project
           title="Song of the Season"
