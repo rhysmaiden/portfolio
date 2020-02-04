@@ -4,13 +4,19 @@ html {
   scroll-behavior: smooth;
 }
 
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .Hero {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #5bc0be;
+  background-color: #0d121f;
   color: white;
   font-size: 40px;
   padding-left: 10vw;
@@ -20,52 +26,49 @@ html {
 .projects {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  background-color: #f4f4f4;
-  padding: 10px;
+  justify-content: space-between;
+  background-color: #0d121f;
+  padding: 10vw;
+  color: white;
+
+  max-width: 1000px;
 }
 
 /* Hero Component */
 
 .Hero > h1 {
-  text-align: center;
   margin: 0px;
+  text-align: left;
+  width: 100%;
+  max-width: 1000px;
 }
 
 .Hero > p {
-  text-align: center;
+  text-align: left;
+  width: 100%;
+  max-width: 1000px;
 }
 
-/* Project Component */
+.hero-buttons {
+  width: 100%;
+  max-width: 1000px;
+  opacity: 0;
+}
 
-.Project {
+.nav {
+  position: absolute;
+  width: 100%;
+  max-width: 1000px;
+
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+}
 
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  margin: 20px;
-  border-radius: 20px;
-
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+.nav > a {
+  font-size: 18px;
 }
 
 /* Text */
-
-.text {
-  max-width: 400px;
-
-  padding-bottom: 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-}
-
-h1 {
-  text-align: center;
-}
 
 h4 {
   margin-bottom: 0;
@@ -82,18 +85,9 @@ h4 {
 
 /* Buttons */
 
-.buttons {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  flex-direction: column;
-  max-width: 400px;
-  width: 100%;
-  margin-top: 10px;
-}
-
 .btn {
-  background-color: #5bc0be;
+  background-color: #c97b84;
+
   border: none;
   color: white;
   padding: 10px 14px;
@@ -104,28 +98,24 @@ h4 {
 }
 
 .btn:hover {
-  background-color: #4ca19f;
+  background-color: #a5656d;
   cursor: pointer;
 }
 
 .inverse {
-  background-color: #ffa630;
+  background-color: #c97b84;
   font-size: 20px;
+  border-radius: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 /* Preview */
 
-.preview {
-  max-width: 400px;
-  padding: 0px;
-}
-
-.preview > img {
-  width: 100%;
-}
-
 body {
-  background: @bg;
+  background-color: #0d121f;
 }
 a {
   color: white;
@@ -166,4 +156,77 @@ a {
 .bottom:hover {
   cursor: pointer;
   font-weight: bold;
+}
+
+/* Project */
+
+/* Project Component */
+
+.Project {
+  display: flex;
+  justify-content: space-evenly;
+
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  margin-bottom: 100px;
+  border-radius: 20px;
+
+  background-color: #232733;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.project-title {
+  width: 100%;
+  text-align: center;
+}
+
+.text {
+  width: 50%;
+
+  padding-bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.preview {
+  width: 50%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.preview > img {
+  width: 100%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+
+  width: 100%;
+  margin-top: 10px;
+  background-color: #373a45;
+  padding: 10px;
+}
+
+.project-btn {
+  border-radius: 20px;
+  margin-left: 10px;
+}
+
+.project-content {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px;
+}
+
+.section-heading {
+  color: white;
+  font-size: 120px;
+  width: 100%;
+  margin: 0;
 }

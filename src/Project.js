@@ -1,30 +1,55 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import { useSpring, animated, config, useChain } from "react-spring";
 
 function Project(props) {
-  return (
-    <div className="Project">
-      <div className="text">
-        <h1>{props.title}</h1>
-        <p>{props.description}</p>
-        <h4>Front-end: {props.frontEnd}</h4>
-        <p>{props.frontEndDescription}</p>
-        {props.backEnd && (
-          <React.Fragment>
-            <h4>Back-end: {props.backEnd}</h4>
-            <p>{props.backEndDescription}</p>
-          </React.Fragment>
-        )}
-      </div>
+  const [visible, setVisible] = useState(false);
 
-      <div className="preview">
-        <img src={props.gif} alt="animated" className="gif"></img>
+  const fadeIn = useSpring({
+    opacity: 1,
+    from: { opacity: 0 },
+    config: { duration: 1000 }
+  });
+
+  const dropDown = useSpring({
+    to: { top: 20 },
+    from: { top: -100 },
+    config: { duration: 500 }
+  });
+
+  const slideInRef = useRef();
+  const slideIn = useSpring({
+    from: { opacity: 0 },
+    to: { opacity: 1 },
+    config: { duration: 1000 }
+  });
+
+  return (
+    <animated.div className="Project" style={fadeIn}>
+      <h1 className="project-title">{props.title}</h1>
+
+      <div className="project-content">
+        <div className="text">
+          <p>{props.description}</p>
+          <h4>Front-end: {props.frontEnd}</h4>
+          <p>{props.frontEndDescription}</p>
+          {props.backEnd && (
+            <React.Fragment>
+              <h4>Back-end: {props.backEnd}</h4>
+              <p>{props.backEndDescription}</p>
+            </React.Fragment>
+          )}
+        </div>
+
+        <div className="preview">
+          <img src={props.gif} alt="animated" className="gif"></img>
+        </div>
       </div>
       <div className="buttons">
         {props.frontEndSrc && (
           <button
-            class="btn"
+            class="btn project-btn"
             onClick={() => {
               window.open(props.frontEndSrc);
             }}
@@ -35,7 +60,7 @@ function Project(props) {
 
         {props.backEndSrc && (
           <button
-            class="btn"
+            class="btn project-btn"
             onClick={() => {
               window.open(props.backEndSrc);
             }}
@@ -45,7 +70,7 @@ function Project(props) {
         )}
         {props.src && (
           <button
-            class="btn"
+            class="btn project-btn"
             onClick={() => {
               window.open(props.src);
             }}
@@ -54,7 +79,7 @@ function Project(props) {
           </button>
         )}
         <button
-          class="btn"
+          class="btn project-btn"
           onClick={() => {
             window.open(props.demo);
           }}
@@ -62,7 +87,7 @@ function Project(props) {
           <i class="fa fa-desktop"></i> Demo
         </button>
       </div>
-    </div>
+    </animated.div>
   );
 }
 

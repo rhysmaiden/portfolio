@@ -15,7 +15,9 @@ function App() {
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
       />
       <Hero />
-      <h1>Projects</h1>
+      <div>
+        <h1 className="section-heading">Projects</h1>
+      </div>
       <div className="projects">
         <Project
           title="The Rugby Vault"
