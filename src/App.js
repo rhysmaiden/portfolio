@@ -6,6 +6,7 @@ import Hero from "./Hero.js";
 import rugbyGif from "./rugby.gif";
 import noCashGif from "./nocash.gif";
 import InstaLiveGif from "./InstaLive.gif";
+import ContactMe from "./ContactMe";
 
 function App() {
   return (
@@ -14,6 +15,14 @@ function App() {
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
       />
+
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+      />
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
       <Hero />
       <div>
         <h1 className="section-heading">Projects</h1>
@@ -40,6 +49,7 @@ function App() {
           backEndDescription="The Node JS server uses Socket IO to communicate with clients. MongoDB holds all the room and player information."
           gif={noCashGif}
           src="https://github.com/rhysmaiden/NoCash"
+          demo="App store link"
         />
         <Project
           title="InstaLive"
@@ -60,14 +70,15 @@ function App() {
           src="https://github.com/rhysmaiden/customherald"
         /> */}
 
-        <Project
+        {/* <Project
           title="Song of the Season"
           description="A single page application that shows your most listened to tracks, artists and albums."
           frontEnd="ReactJS"
           frontEndDescription="Data is fetched through Last FM. To test use username: sabermusicmag"
           gif={rugbyGif}
-        />
+        /> */}
       </div>
+      {/* <ContactMe /> */}
     </div>
   );
 }

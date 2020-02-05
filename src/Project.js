@@ -27,16 +27,17 @@ function Project(props) {
 
   return (
     <animated.div className="Project" style={fadeIn}>
-      <h1 className="project-title">{props.title}</h1>
+      <h2 className="project-title">{props.title}</h2>
 
       <div className="project-content">
         <div className="text">
+          <h5>Description</h5>
           <p>{props.description}</p>
-          <h4>Front-end: {props.frontEnd}</h4>
+          <h5>Front-end: {props.frontEnd}</h5>
           <p>{props.frontEndDescription}</p>
           {props.backEnd && (
             <React.Fragment>
-              <h4>Back-end: {props.backEnd}</h4>
+              <h5>Back-end: {props.backEnd}</h5>
               <p>{props.backEndDescription}</p>
             </React.Fragment>
           )}

@@ -30,13 +30,12 @@ function Hero() {
     ref: slideInRef
   });
 
-  useChain([fadeInRef, slideInRef]);
-  useChain([fadeInRef, dropDownRef]);
+  useChain([fadeInRef, slideInRef, dropDownRef]);
 
   return (
     <div className="Hero">
       <animated.div className="nav" style={dropDown}>
-        <a>resume</a>
+        <a>RESUME</a>
       </animated.div>
       <animated.div style={fadeIn}>
         <h1>Hi, I'm Rhys</h1>
@@ -47,7 +46,12 @@ function Hero() {
       </animated.div>
 
       <animated.div className="hero-buttons" style={slideIn}>
-        <button class="btn inverse" onClick={() => {}}>
+        <button
+          class="btn inverse"
+          onClick={() => {
+            window.open("mailto:maidenrhys@gmail.com");
+          }}
+        >
           <i class="fa fa-address-book"></i> Get in touch
         </button>
       </animated.div>
