@@ -34,7 +34,7 @@ function App() {
       <div className="projects">
         <Project
           title="The Rugby Vault"
-          description="A website that displays and allows users to watch match and try highlights. Front-end is"
+          description="A website that displays and allows users to watch match and try highlights. Built with Django and ReactJS."
           frontEnd="ReactJS"
           frontEndDescription="The frontend fetches data from the server."
           backEnd="Django REST Framework"
@@ -48,7 +48,7 @@ function App() {
         />
         <Project
           title="InstaLive"
-          description="A front-end single page application that displays a live photo feed from a location via Instagram."
+          description="A front-end single page application that displays a live photo feed from a location via Instagram. Built with ReactJS."
           frontEnd="ReactJS"
           frontEndDescription="Data is fetched through Instagram GraphQL Queries and displayed in a responsive grid."
           gif={InstaLiveGif}
@@ -58,7 +58,7 @@ function App() {
         />
         <Project
           title="No Cash"
-          description="A mobile app that allows users to play board and card games that require currency. e.g. Poker without chips, Monopoly without cash."
+          description="A mobile app that allows users to play board and card games that require currency. e.g. Poker without chips, Monopoly without cash. Built with NodeJS, SocketIO and React Native."
           frontEnd="React Native"
           frontEndDescription="The front-end is built using react-native in combination with Expo. It uses Socket IO to communicate with the server."
           backEnd="Node JS and MongoDB"
