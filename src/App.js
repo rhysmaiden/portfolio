@@ -9,6 +9,8 @@ import InstaLiveGif from "./InstaLive.gif";
 import ContactMe from "./ContactMe";
 
 import RugbyVaultScreens from "./Rugby Vault screens.png";
+import InstaLiveScreens from "./Instalive Screens.png";
+import NoCashScreens from "./NoCashScreens.png";
 
 function App() {
   return (
@@ -32,7 +34,7 @@ function App() {
       <div className="projects">
         <Project
           title="The Rugby Vault"
-          description="A website that displays and allows users to watch match and try highlights."
+          description="A website that displays and allows users to watch match and try highlights. Front-end is"
           frontEnd="ReactJS"
           frontEndDescription="The frontend fetches data from the server."
           backEnd="Django REST Framework"
@@ -45,6 +47,16 @@ function App() {
           img={RugbyVaultScreens}
         />
         <Project
+          title="InstaLive"
+          description="A front-end single page application that displays a live photo feed from a location via Instagram."
+          frontEnd="ReactJS"
+          frontEndDescription="Data is fetched through Instagram GraphQL Queries and displayed in a responsive grid."
+          gif={InstaLiveGif}
+          src="https://github.com/rhysmaiden/instalive"
+          demo="https://instalive.netlify.com/"
+          img={InstaLiveScreens}
+        />
+        <Project
           title="No Cash"
           description="A mobile app that allows users to play board and card games that require currency. e.g. Poker without chips, Monopoly without cash."
           frontEnd="React Native"
@@ -54,17 +66,7 @@ function App() {
           gif={noCashGif}
           src="https://github.com/rhysmaiden/NoCash"
           demo="App store link"
-          img={RugbyVaultScreens}
-        />
-        <Project
-          title="InstaLive"
-          description="A frontEnd single page application that displays a live photo feed from a location via Instagram."
-          frontEnd="ReactJS"
-          frontEndDescription="Data is fetched through Instagram GraphQL Queries and displayed in a responsive grid."
-          gif={InstaLiveGif}
-          src="https://github.com/rhysmaiden/instalive"
-          demo="https://instalive.netlify.com/"
-          img={RugbyVaultScreens}
+          img={NoCashScreens}
         />
 
         {/* <Project

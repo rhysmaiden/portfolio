@@ -47,7 +47,7 @@ function Hero() {
 
       <animated.div className="hero-buttons" style={slideIn}>
         <button
-          class="btn inverse"
+          class="btn project-btn"
           onClick={() => {
             window.open("mailto:maidenrhys@gmail.com");
           }}

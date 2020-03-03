@@ -76,7 +76,7 @@ h4 {
 /* Buttons */
 
 .btn {
-  background-color: #c97b84 !important;
+  background-color: #e59400 !important;
 
   border: none;
   color: white;
@@ -196,6 +196,14 @@ a {
   .project-title {
     text-align: center !important;
   }
+
+  .project-description {
+    text-align: center !important;
+  }
+
+  .buttons {
+    justify-content: center !important;
+  }
 }
 
 .preview > img {
@@ -283,7 +291,7 @@ input:focus {
 
 .Project {
   padding-top: 20px;
-  margin-bottom: 5vw;
+  margin-bottom: 3vh;
   border-radius: 20px;
   max-width: 1000px;
 
