@@ -36,6 +36,7 @@ html {
   text-align: left;
   width: 100%;
   max-width: 1000px;
+  font-size: 1.5rem;
 }
 
 .hero-buttons {
@@ -164,26 +165,6 @@ a {
   padding-top: 40px;
 }
 
-.Project {
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding-top: 20px;
-  margin-bottom: 100px;
-  border-radius: 20px;
-  max-width: 1000px;
-
-  background-color: #232733;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.project-title {
-  width: 100%;
-  text-align: center;
-}
-
 .text {
   padding-bottom: 0px;
   display: flex;
@@ -191,6 +172,7 @@ a {
   justify-content: start;
   margin-bottom: 30px;
   width: 100%;
+  font-size: 1.5rem;
 }
 
 .preview {
@@ -205,6 +187,15 @@ a {
   .preview {
     width: 100% !important;
   }
+
+  .right,
+  .left {
+    width: 100% !important;
+  }
+
+  .project-title {
+    text-align: center !important;
+  }
 }
 
 .preview > img {
@@ -213,20 +204,21 @@ a {
 
 .buttons {
   display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
 
+  flex-wrap: wrap;
+  margin-left: -0.5vw;
   width: 100%;
-  margin-top: 10px;
-  background-color: #373a45;
-  padding: 10px;
-  padding-right: 5vw;
-  border-radius: 0px 0px 20px 20px;
+
+  /* background-color: #373a45; */
+}
+
+.button {
+  padding: 0.5vw;
 }
 
 .project-btn {
   border-radius: 20px;
-  margin-left: 10px;
+  /* margin-left: 10px; */
 }
 
 .project-content {
@@ -242,7 +234,7 @@ a {
 
 .section-heading {
   color: white;
-  font-size: 80px;
+  font-size: 4rem;
   width: 100%;
   margin: 0;
 }
@@ -285,4 +277,49 @@ input:focus {
 
 .submit {
   margin-top: 50px;
+}
+
+/* New Project */
+
+.Project {
+  padding-top: 20px;
+  margin-bottom: 5vw;
+  border-radius: 20px;
+  max-width: 1000px;
+
+  background-color: #232733;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.project-main {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.project-title {
+  width: 100%;
+
+  font-size: 2rem;
+}
+
+.project-description {
+  font-size: 1rem;
+}
+
+.screenImage {
+  width: 100%;
+}
+
+.left,
+.right {
+  max-width: 500px;
+  padding: 1vw;
+  width: 50%;
+}
+
+.tags {
+  display: flex;
 }

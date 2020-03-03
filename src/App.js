@@ -1,12 +1,14 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import Project from "./Project.js";
+import Project from "./ProjectV2.js";
 import Hero from "./Hero.js";
 import rugbyGif from "./rugby.gif";
 import noCashGif from "./nocash.gif";
 import InstaLiveGif from "./InstaLive.gif";
 import ContactMe from "./ContactMe";
+
+import RugbyVaultScreens from "./Rugby Vault screens.png";
 
 function App() {
   return (
@@ -39,6 +41,8 @@ function App() {
           frontEndSrc="https://github.com/rhysmaiden/rugbyvaultfrontend"
           backEndSrc="https://github.com/rhysmaiden/rugbyvaultbackend"
           demo="https://www.therugbyvault.com/"
+          tags={["ReactJS", "Django"]}
+          img={RugbyVaultScreens}
         />
         <Project
           title="No Cash"
@@ -50,6 +54,7 @@ function App() {
           gif={noCashGif}
           src="https://github.com/rhysmaiden/NoCash"
           demo="App store link"
+          img={RugbyVaultScreens}
         />
         <Project
           title="InstaLive"
@@ -59,6 +64,7 @@ function App() {
           gif={InstaLiveGif}
           src="https://github.com/rhysmaiden/instalive"
           demo="https://instalive.netlify.com/"
+          img={RugbyVaultScreens}
         />
 
         {/* <Project
