@@ -52,10 +52,17 @@ html {
 
   display: flex;
   justify-content: flex-end;
+  padding-left: 10vw;
+  padding-right: 10vw;
 }
 
 .nav > a {
   font-size: 18px;
+  color: white;
+}
+
+.nav > a:hover {
+  color: #e59400;
 }
 
 /* Text */
@@ -88,12 +95,12 @@ h4 {
 }
 
 .btn:hover {
-  background-color: #a5656d !important;
+  background-color: #bf800d !important;
   cursor: pointer;
 }
 
 .inverse {
-  background-color: #c97b84 !important;
+  background-color: #bf800d !important;
   font-size: 20px;
   border-radius: 30px !important;
   padding-left: 30px;

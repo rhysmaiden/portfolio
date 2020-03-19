@@ -40,6 +40,7 @@ function App() {
           backEnd="Django REST Framework"
           backEndDescription="The backend accepts GET and POST requests from the client. Periodically run python scripts keep the database updated."
           gif={rugbyGif}
+          src="https://github.com/rhysmaiden/rugbyvaultfrontend"
           frontEndSrc="https://github.com/rhysmaiden/rugbyvaultfrontend"
           backEndSrc="https://github.com/rhysmaiden/rugbyvaultbackend"
           demo="https://www.therugbyvault.com/"
