@@ -184,7 +184,7 @@ a {
   padding-bottom: 0px;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   margin-bottom: 30px;
   width: 100%;
   font-size: 1.5rem;

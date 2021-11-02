@@ -1,11 +1,8 @@
-import React, { useRef, useState } from "react";
-import logo from "./logo.svg";
+import React from "react";
 import "./App.css";
-import Tags from "./Tags.js";
-import { useSpring, animated, config, useChain } from "react-spring";
+import { useSpring, animated } from "react-spring";
 
 function ProjectV2(props) {
-  const [visible, setVisible] = useState(false);
 
   const fadeIn = useSpring({
     opacity: 1,
@@ -13,18 +10,6 @@ function ProjectV2(props) {
     config: { duration: 1000 }
   });
 
-  const dropDown = useSpring({
-    to: { top: 20 },
-    from: { top: -100 },
-    config: { duration: 500 }
-  });
-
-  const slideInRef = useRef();
-  const slideIn = useSpring({
-    from: { opacity: 0 },
-    to: { opacity: 1 },
-    config: { duration: 1000 }
-  });
 
   return (
     <animated.div className="Project" style={fadeIn}>
@@ -58,7 +43,7 @@ function ProjectV2(props) {
           </div>
         </div>
         <div className="right">
-          <img className="screenImage" src={props.img} />
+          <img className="screenImage" src={props.img} alt="img" />
         </div>
       </div>
     </animated.div>

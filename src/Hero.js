@@ -1,28 +1,13 @@
-import React, { useRef, useEffect, useState } from "react";
-import logo from "./logo.svg";
+import React, { useRef } from "react";
 import "./App.css";
 import Resume from "./resume.pdf";
-import { useSpring, animated, config, useChain } from "react-spring";
+import { useSpring, animated, useChain } from "react-spring";
 
 function Hero() {
 
-  const [scrollIndicatorVisible, setScrollIndicatorVisible] = useState(true);
-
   const fadeInRef = useRef();
-  const fadeIn = useSpring({
-    to: { opacity: 1 },
-    from: { opacity: 0 },
-    config: { duration: 500 },
-    ref: fadeInRef
-  });
 
   const dropDownRef = useRef();
-  const dropDown = useSpring({
-    to: { top: 20, opacity: 1 },
-    from: { top: 0, opacity: 0 },
-    config: { duration: 500 },
-    ref: dropDownRef
-  });
 
   const slideInRef = useRef();
   const slideIn = useSpring({
@@ -31,13 +16,6 @@ function Hero() {
 
     config: { duration: 1000 },
     ref: slideInRef
-  });
-
-  const slideOut = useSpring({
-    to: { opacity: 0 },
-    opacity: 1,
-
-    config: { duration: 1000 }
   });
 
   useChain([fadeInRef, slideInRef, dropDownRef]);
@@ -75,7 +53,7 @@ function Hero() {
             </button>
           </animated.div>
         </div>
-        <animated.div class="mouse_scroll" style={scrollIndicatorVisible ? slideIn : slideOut}>
+        <animated.div class="mouse_scroll">
 
           <div class="mouse">
             <div class="wheel"></div>

@@ -1,16 +1,11 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import Project from "./ProjectV2.js";
 import Hero from "./Hero.js";
 import rugbyGif from "./rugby.gif";
-import noCashGif from "./nocash.gif";
 import InstaLiveGif from "./InstaLive.gif";
-import ContactMe from "./ContactMe";
 
 import RugbyVaultScreens from "./Rugby Vault screens.png";
-import InstaLiveScreens from "./Instalive Screens.png";
-import NoCashScreens from "./NoCashScreens.png";
 import HotelPortalScreen from "./HotelPortal.png";
 
 function App() {

@@ -1,9 +1,5 @@
-import React, { useRef } from "react";
-import logo from "./logo.svg";
+import React from "react";
 import "./App.css";
-
-import { useSpring, animated, config, useChain } from "react-spring";
-
 function ContactMe() {
   return (
     <div className="contact-me">
