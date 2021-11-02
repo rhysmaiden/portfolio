@@ -5,10 +5,6 @@ import { useSpring, animated, useChain } from "react-spring";
 
 function Hero() {
 
-  const fadeInRef = useRef();
-
-  const dropDownRef = useRef();
-
   const slideInRef = useRef();
   const slideIn = useSpring({
     to: { opacity: 1 },
@@ -18,7 +14,7 @@ function Hero() {
     ref: slideInRef
   });
 
-  useChain([fadeInRef, slideInRef, dropDownRef]);
+  useChain([slideInRef]);
 
   return (
     <React.Fragment>
