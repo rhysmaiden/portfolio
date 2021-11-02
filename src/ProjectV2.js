@@ -32,6 +32,8 @@ function ProjectV2(props) {
         <div className="left">
           <h3 className="project-title">{props.title}</h3>
           <p className="project-description">{props.description}</p>
+          <p>{props.username}</p>
+          <p>{props.password}</p>
           <div className="buttons">
             <div className="button">
               <button
